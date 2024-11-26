@@ -1,0 +1,98 @@
+:host {
+    ion-header {
+      --background: linear-gradient(to right, #008000, #002200); // Gradiente verde claro e escuro
+      color: rgb(73, 20, 20);
+  
+      ion-toolbar {
+        --background: transparent;
+  
+        ion-title {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: rgb(255, 255, 255); // Título branco
+        }
+  
+        ion-buttons {
+          ion-back-button {
+            color: white; // Ícone de voltar branco
+          }
+        }
+      }
+    }
+  
+    ion-content {
+      --background: linear-gradient(to bottom, #428000, #001a00); // Fundo verde com preto
+      color: rgb(92, 167, 7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      form {
+        width: 100%;
+        max-width: 400px; // Limita a largura do formulário
+        margin: 0 auto; // Centraliza o formulário
+  
+        ion-card {
+          --background: rgba(255, 255, 255, 0.1); // Fundo transparente no card
+          color: rgb(19, 171, 44);
+  
+          ion-card-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: rgb(59, 155, 125);
+          }
+  
+          ion-card-content {
+            font-size: 1rem;
+            font-style: italic;
+            color:  rgb(59, 155, 125);
+          }
+        }
+  
+        ion-item {
+          --background: rgba(0, 128, 0, 0.2); // Fundo levemente visível com verde claro
+          --color: white; // Texto branco
+          --placeholder-color: rgba(255, 255, 255, 0.8); // Placeholder branco com opacidade
+          border: 1px solid rgba(255, 255, 255, 0.6); // Borda visível e suave
+          border-radius: 8px; // Bordas arredondadas
+          margin: 15px 0; // Espaçamento vertical
+          padding: 5px;
+  
+          ion-label {
+            color: white; // Cor do label
+          }
+  
+          ion-input {
+            color: white; // Texto branco
+  
+            // Torna os campos mais visíveis
+            background: rgba(0, 0, 0, 0.3); // Fundo mais visível
+            --placeholder-color: rgba(255, 255, 255, 0.6); // Placeholder com leve opacidade
+          }
+        }
+  
+        .ion-text-center {
+          margin-top: 20px; // Espaçamento superior para os botões
+  
+          ion-button {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #b30000; // Vermelho para o botão
+            color: white; // Texto branco no botão
+            border-radius: 20px;
+            margin: 5px 10px; // Espaçamento entre botões
+  
+            ion-icon {
+              margin-left: 5px; // Espaçamento entre texto e ícone
+            }
+  
+            &:hover {
+              background-color: #ff1a1a; // Vermelho mais claro no hover
+            }
+          }
+        }
+      }
+    }
+  }
+  

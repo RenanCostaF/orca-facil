@@ -1,0 +1,7 @@
+{
+  "name": "orca",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

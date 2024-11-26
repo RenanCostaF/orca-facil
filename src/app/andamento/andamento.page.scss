@@ -1,0 +1,80 @@
+// Estilizando o cabeçalho
+ion-header {
+  ion-toolbar {
+    background-color: #4CAF50; // Um verde suave
+    color: white;
+  }
+
+  ion-button {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+ion-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+// Estilizando a lista de orçamentos
+ion-item {
+  --background: #f9f9f9; // Cor de fundo para os itens
+  margin: 10px 0;
+  border-radius: 10px; // Bordas arredondadas para os itens
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Sombra leve
+  padding: 15px;
+}
+
+// Estilizando os textos dentro dos itens
+ion-label h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+ion-label p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+// Estilizando a imagem do orçamento
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; // Bordas arredondadas para a imagem
+  margin: 10px 0;
+}
+
+// Estilizando a lista de itens
+ion-list {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+// Estilizando os botões
+ion-button {
+  --border-radius: 10px;
+  --background: #4CAF50; // Verde para o botão de concluir
+  --color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+ion-button[color="success"] {
+  --background: #28a745;
+}
+
+ion-button:hover {
+  opacity: 0.8;
+  transform: scale(1.05); // Efeito leve ao passar o mouse
+  transition: transform 0.2s;
+}
+
+// Estilizando o status
+p[ngIf="orcamento.emExecucao"] {
+  font-weight: bold;
+  color: #ff9800; // Cor laranja para o status
+}

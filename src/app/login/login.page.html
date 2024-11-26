@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">
+      ORÇA-FÁCIL <!-- Texto no topo -->
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="login-content">
+  <form>
+    <!-- Logo centralizada -->
+    <div class="logo-container">
+      <img src="assets/img/logo1.png" alt="Logo">
+    </div>
+
+    <!-- Campos de Login -->
+    <ion-item line="full">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="text" name="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item line="full">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" name="senha" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+    
+    <!-- Botões de Login e Cadastro -->
+    <div class="ion-text-center">
+      <ion-button color="primary" type="submit" (click)="loginUsuario()">
+        Login
+        <ion-icon slot="end" name="enter-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="danger" type="submit" (click)="cadastroPage()">
+        Fazer Cadastro
+        <ion-icon slot="end" name="person-add-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </form>
+</ion-content>

@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="voltar()">
+        <ion-icon name="arrow-back"></ion-icon> Voltar
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Novo Orçamento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="submitOrcamento()">
+    <ion-item>
+      <ion-label>Tipo de Orçamento:</ion-label>
+      <ion-input [(ngModel)]="orcamento.tipo" name="tipo" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nome do Cliente:</ion-label>
+      <ion-input [(ngModel)]="orcamento.nomeCliente" name="nomeCliente" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>CPF ou CNPJ:</ion-label>
+      <ion-input [(ngModel)]="orcamento.cpfCnpj" name="cpfCnpj" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>WhatsApp(com DDD:)</ion-label>
+      <ion-input [(ngModel)]="orcamento.whatsapp" name="whatsapp" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Material:</ion-label>
+      <ion-input [(ngModel)]="orcamento.material" name="material" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Quantidade:</ion-label>
+      <ion-input type="number" [(ngModel)]="orcamento.quantidade" name="quantidade" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Valor Unitário:</ion-label>
+      <ion-input type="number" [(ngModel)]="orcamento.valorUnitario" name="valorUnitario" required></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-button (click)="tirarFoto()">Tirar Foto</ion-button>
+    </ion-item>
+
+    <ion-button type="submit">Finalizar Orçamento</ion-button>
+  </form>
+</ion-content>

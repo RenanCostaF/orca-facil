@@ -1,0 +1,63 @@
+// Cabeçalho com cor de destaque
+ion-header {
+  ion-toolbar {
+    background-color: #28a745; // Verde para o novo orçamento
+    color: white;
+  }
+
+  ion-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+// Estilo para o formulário
+ion-content {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; // Espaçamento entre os campos
+}
+
+// Estilo para os campos de entrada
+ion-input,
+ion-textarea {
+  --background: white;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ion-input::placeholder,
+ion-textarea::placeholder {
+  color: #999;
+}
+
+// Estilo para o botão de envio
+ion-button {
+  --background: #28a745; // Botão verde
+  --color: white;
+  --border-radius: 8px;
+  font-weight: bold;
+  padding: 2px;
+  width: 100%;
+}
+
+ion-button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}
+
+// Estilo para as labels dos campos
+ion-label {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}

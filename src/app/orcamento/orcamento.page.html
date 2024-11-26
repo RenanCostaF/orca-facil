@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="voltar()">
+        <ion-icon name="arrow-back"></ion-icon> Voltar
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Orçamentos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let orcamento of orcamentos"> <!-- Corrija aqui -->
+      <ion-label>
+        <h2>{{ orcamento.tipo }}</h2>
+        <p>Material: {{ orcamento.material }}</p>
+        <p>Quantidade: {{ orcamento.quantidade }}</p>
+        <p>Valor Unitário: {{ orcamento.valorUnitario }}</p>
+        <p>Nome do Cliente: {{ orcamento.nomeCliente }}</p>
+        <p>CPF/CNPJ: {{ orcamento.cpfCnpj }}</p>
+        <p>WhatsApp: {{ orcamento.whatsapp }}</p>
+      </ion-label>
+      <ion-button (click)="aprovar(orcamento)">Aprovar</ion-button>
+      <ion-button color="danger" (click)="recusar(orcamento)">Recusar</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

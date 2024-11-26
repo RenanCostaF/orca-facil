@@ -1,0 +1,80 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  /* Fundo branco */
+}
+
+.centered-image {
+  margin-bottom: 20px;
+  /* Adicione um espaço abaixo da imagem, se necessário */
+}
+
+.bottom-buttons {
+  width: 100%;
+}
+
+ion-button {
+  background-color: #4CAF50;
+  /* Cor verde para os botões */
+  color: white;
+  /* Texto branco nos botões */
+}
+
+/* Adiciona um hover mais claro para o botão */
+ion-button:hover {
+  background-color: darken(#4CAF50, 10%);
+  /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilo para o título no cabeçalho */
+ion-header {
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+}
+
+ion-title {
+  color: #4CAF50;
+  /* Cor verde para o título */
+  text-align: center;
+  /* Centraliza o texto */
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-button {
+  background-color: var(--cor-principal);
+  /* Verde */
+  color: var(--cor-secundaria);
+  /* Branco */
+}
+
+.custom-button:hover {
+  background-color: var(--cor-principal-escuro);
+  /* Verde mais escuro ao passar o mouse */
+}
+
+ion-button {
+  --background: #4CAF50; // Botões com cor verde principal
+  --color: white;
+  --border-radius: 8px;
+  width: 100%;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+ion-button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}

@@ -1,0 +1,117 @@
+:host {
+    ion-header {
+      --background: linear-gradient(to right, #008000, #002200); // Gradiente verde claro e escuro
+      color: white;
+  
+      ion-toolbar {
+        --background: transparent;
+  
+        ion-title {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: white; // Título branco
+        }
+      }
+    }
+  
+    ion-content {
+      --background: linear-gradient(to bottom, #008000, #001a00); // Fundo verde com preto
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      // Impedir o comportamento de rolagem automática
+      ion-scroll {
+        overflow-y: auto;
+      }
+  
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; // Espaçamento superior
+        margin-bottom: 40px; // Espaçamento abaixo da logo
+  
+        img {
+          max-width: 200px; // Tamanho máximo aumentado para 200px
+          height: auto;
+        }
+      }
+  
+      form {
+        width: 100%;
+        max-width: 400px; // Limita a largura do formulário
+        ion-card {
+          --background: rgba(255, 255, 255, 0.1); // Fundo transparente no card
+          color: white;
+  
+          ion-card-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: white;
+          }
+  
+          ion-card-content {
+            font-size: 1rem;
+            font-style: italic;
+            color: white;
+          }
+        }
+  
+        ion-item {
+          --background: rgba(0, 128, 0, 0.2); // Fundo levemente visível com verde claro
+          --color: white; // Texto branco
+          --placeholder-color: rgba(255, 255, 255, 0.8); // Placeholder branco com opacidade
+          border: 1px solid rgba(255, 255, 255, 0.6); // Borda visível e suave
+          border-radius: 8px; // Bordas arredondadas
+          margin: 15px 0; // Espaçamento vertical
+          padding: 5px;
+  
+          ion-label {
+            color: white; // Cor do label
+          }
+  
+          ion-input {
+            color: white; // Texto branco
+  
+            // Torna os campos mais visíveis
+            background: rgba(0, 0, 0, 0.3); // Fundo mais visível
+            --placeholder-color: rgba(255, 255, 255, 0.6); // Placeholder com leve opacidade
+          }
+        }
+  
+        // Recuo dos campos
+        .form-fields {
+          margin-top: 40px; // Move os campos para baixo
+        }
+  
+        .ion-text-center {
+          margin-top: 20px; // Espaçamento superior para os botões
+  
+          ion-button {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 20px;
+            margin: 5px 10px; // Espaçamento entre botões
+  
+            &[color="danger"] {
+              --background: #b30000; // Vermelho para o botão de login
+              --background-hover: #ff1a1a; // Vermelho mais claro no hover
+            }
+  
+            &[color="warning"] {
+              --background: #cc7a00; // Amarelo para o botão de cadastro
+              --background-hover: #ff9900; // Amarelo mais claro no hover
+            }
+  
+            ion-icon {
+              margin-left: 5px; // Espaçamento entre texto e ícone
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,99 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+
+
+/* Estilos Globais */
+:root {
+  --cor-principal: #4CAF50;
+  /* Verde */
+  --cor-secundaria: #FFFFFF;
+  /* Branco */
+  --cor-principal-escuro: #388E3C;
+  /* Verde mais escuro para hover */
+  --cor-principal-claro: #A5D6A7;
+  /* Verde mais claro para outros elementos */
+  --ion-color-background: white;
+  /* Define a cor de fundo principal */
+  --ion-color-light: #f0f0f0;
+}
+
+body {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--cor-principal);
+}
+
+ion-header {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+}
+
+ion-content {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+}
+
+ion-button {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+}
+
+ion-button:hover {
+  background-color: var(--cor-principal-escuro);
+  /* Use a cor mais escura definida */
+}
+
+input,
+textarea {
+  background-color: var(--cor-secundaria);
+  border: 1px solid var(--cor-principal);
+  color: var(--cor-principal);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--cor-principal-claro);
+  /* Cor mais clara para o placeholder */
+}
+
+ion-title {
+  color: #4CAF50;
+  /* Cor verde para o título */
+  text-align: center;
+  /* Centraliza o texto */
+  flex: 1;
+  /* Faz com que o título ocupe todo o espaço disponível */
+}
